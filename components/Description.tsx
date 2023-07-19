@@ -1,23 +1,54 @@
 import React from "react";
 
 const Description: React.FC<object> = () => {
-    return (
-        <div className="mt-8 text-center md:mt-20 text-md md:text-xl max-w-prose">
-            <p >
-                i&apos;m currently a third year student at <a href="https://ucsd.edu" className="p-1 font-semibold underline rounded-lg decoration-ucsd-gold hover:bg-ucsd-blue hover:text-ucsd-gold underline-offset-2 hover:no-underline">uc san diego 🔱</a> studying computer engineering. i&apos;m passionate about technology and i love learning more and exploring the field!
-            </p>
-            <br />
-            <p>
-                i&apos;ve previously interned at <a href="https://www.nvidia.com" className="p-1 font-semibold rounded-lg text-nvidia hover:bg-nvidia hover:bg-opacity-20">nvidia</a> and <a href="https://www.nasa.gov/goddard" className="p-1 font-semibold rounded-lg text-nasa hover:bg-nasa hover:bg-opacity-20">nasa goddard space flight center</a>. at ucsd, i&apos;m currently the vice president of events for the <a href="https://acmucsd.com" className="p-1 font-semibold rounded-lg text-acm hover:bg-acm hover:bg-opacity-20"> association for computing machinery at uc san diego student chapter</a> as well as a developer for <a href="https://tse.ucsd.edu" className="p-1 font-semibold rounded-lg text-tse hover:bg-tse hover:bg-opacity-20"> triton software engineering</a> on the lap student tracker team. 
-            </p>
-            <br />
-            <p>
-                feel free to connect with me at any of the links below!
-            </p>
-        </div> 
-
-    );
-
+  return (
+    <div className="mt-8 text-left text-gray-700 md:mt-20 text-md md:text-xl max-w-prose dark:text-gray-400 ">
+      <p>
+        i&apos;m currently a third year student at
+        <a
+          href="https://ucsd.edu"
+          className="p-1 decoration-ucsd-gold hover:text-ucsd-blue underline-offset-2 hover:underline"
+        >
+          uc san diego 🔱
+        </a>
+        studying computer engineering. i&apos;m passionate about technology and
+        i love learning more and exploring the field!
+      </p>
+      <br />
+      <p>
+        right now, i&apos;m interning at
+        <a
+          href="https://www.roblox.com"
+          className="p-1 text-black dark:text-white dark:decoration-white decoration-black underline-offset-2 hover:underline"
+        >
+          roblox.
+        </a>
+        i&apos;ve previously interned at
+        <a
+          href="https://www.nvidia.com"
+          className="p-1 text-nvidia decoration-nvidia underline-offset-2 hover:underline"
+        >
+          nvidia
+        </a>
+        and
+        <a
+          href="https://www.nasa.gov/goddard"
+          className="p-1 text-nasa decoration-nasa underline-offset-2 hover:underline"
+        >
+          nasa goddard space flight center.
+        </a>
+        at ucsd, i&apos;m currently the president of the
+        <a
+          href="https://acmucsd.com"
+          className="p-1 text-acm decoration-acm underline-offset-2 hover:underline"
+        >
+          association for computing machinery.
+        </a>{" "}
+      </p>
+      <br />
+      <p>feel free to connect with me at any of the links below!</p>
+    </div>
+  );
 };
 
 export default Description;

@@ -1,9 +1,5 @@
-import DarkSwitch from "./darkSwitch";
 import Description from "./Description";
-import Footer from "./Footer";
-import Icons from "./Icons";
 import Intro from "./Intro";
-import NavBar from "./NavBar";
 
 const HomeSlide = () => {
   return (

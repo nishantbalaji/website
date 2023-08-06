@@ -13,10 +13,7 @@ const DarkSwitch: React.FC<object> = () => {
   if (!mounted) return null;
 
   return (
-    <button
-      onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-      className="bg-pink-200"
-    >
+    <button onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
       <FontAwesomeIcon
         icon={theme === "light" ? faMoon : faSun}
         className="w-6 h-6 md:h-8 md:w-8"

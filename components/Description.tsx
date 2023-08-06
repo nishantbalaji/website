@@ -1,8 +1,9 @@
 import React from "react";
+import Icons from "./Icons";
 
 const Description: React.FC<object> = () => {
   return (
-    <div className="mt-8 text-left text-gray-700 md:mt-20 text-md md:text-xl max-w-prose dark:text-gray-400 ">
+    <div className="mt-4 text-left text-gray-700  text-md md:text-xl max-w-prose dark:text-gray-400 ">
       <p>
         i&apos;m currently a third year student at
         <a
@@ -47,6 +48,7 @@ const Description: React.FC<object> = () => {
       </p>
       <br />
       <p>feel free to connect with me at any of the links below!</p>
+      <Icons />
     </div>
   );
 };

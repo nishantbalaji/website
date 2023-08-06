@@ -1,21 +1,15 @@
 import React from "react";
+import DarkSwitch from "./darkSwitch";
 
 const NavBar: React.FC<object> = () => {
-    return (
-         <div className="flex justify-center py-8 text-lg font-semibold bg-green-300 font-general">
-            <div className="flex justify-end px-12 space-x-2 bg-red-300">
-                <a className="inline-block text-sm tracking-wider text-black bg-orange-300 focus:outline-none focus:ring focus:ring-offset-2 sm:text-base hover:underline hover:underline-offset-2 hover:text-black focus:ring-opacity-50" href="#">Resume</a>
-                <a className="inline-block text-sm tracking-wider text-black bg-orange-300 focus:outline-none focus:ring focus:ring-offset-2 sm:text-base hover:underline hover:underline-offset-2 hover:text-black focus:ring-opacity-50" href="#">Resume2</a>
-            </div>
-        </div>
-        
-        // // centered navbar
-        // <div className="flex justify-center mt-8 mr-8 space-x-2 text-lg font-semibold font-general">
-        //     hj
-        //     </div>
+  return (
+    <nav className="text-lg py-4 px-8 font-general justify-center flex flex-row align-evenly ">
+      <div className="text-middle basis-1/2">nishant balaji</div>
+      <div className="text-right basis-1/2 space-x-2 ">
+        <DarkSwitch />
+      </div>
+    </nav>
+  );
+};
 
-        
-    );
-}
-  
 export default NavBar;

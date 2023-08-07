@@ -131,6 +131,11 @@
     padding: 4rem;
   }
 
+  .main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .grid {
     grid-template-columns: 1fr;
     margin-bottom: 120px;
@@ -206,9 +211,6 @@
 @media (min-width: 701px) and (max-width: 1120px) {
   .grid {
     grid-template-columns: repeat(2, 50%);
-  }
-  .main {
-    padding: 20px;
   }
 }
 

@@ -1,10 +1,15 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+"use client";
+import Image from "next/image";
+import styles from "./page.module.css";
+import { NextPage } from "next";
+import Loader from "@/components/Loader";
+import About from "@/components/About";
 
-export default function Home() {
+const Home: NextPage = () => {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
+      <About />
+      {/* <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
           <code className={styles.code}>src/app/page.tsx</code>
@@ -15,7 +20,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{' '}
+            By{" "}
             <Image
               src="/vercel.svg"
               alt="Vercel Logo"
@@ -89,7 +94,9 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
-      </div>
+      </div> */}
     </main>
-  )
-}
+  );
+};
+
+export default Home;

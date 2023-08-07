@@ -1,0 +1,43 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+h1 span {
+  display: inline-block;
+  position: relative;
+}
+
+h1 span::after {
+  content: "";
+  position: absolute;
+  bottom: 25%;
+  left: 0;
+  height: 1.5rem;
+  width: 100%;
+  background: #04b1c8;
+  z-index: -1;
+}
+
+.typing {
+  font-size: 1.5rem;
+}

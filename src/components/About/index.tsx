@@ -14,8 +14,8 @@ const About: NextComponentType = () => {
   ];
   return (
     <div className={styles.about}>
-      <h2 className={styles.heading_one}>hello, world! 👋</h2>
-      <h1 className={styles.heading_two}>
+      <h2 className={styles.heading_two}>hello, world! 👋</h2>
+      <h1 className={styles.heading_one}>
         i&#39;m <span className={styles.name}>nishant balaji</span>
       </h1>
       <div className={styles.typing}>

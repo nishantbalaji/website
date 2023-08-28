@@ -1,8 +1,10 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: left;
+  // justify-content: space-between;
+  // align-items: left;
+  justify-content: center;
+  align-items: center;
   padding: 6rem;
   min-height: 100vh;
 }
@@ -126,7 +128,7 @@
 }
 
 /* Mobile */
-@media (max-width: 784px) {
+@media (max-width: 700px) {
   .content {
     padding: 4rem;
   }

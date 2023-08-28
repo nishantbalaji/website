@@ -39,7 +39,12 @@ const NavBar: NextComponentType = () => {
         <div className={styles.navbar_right}>
           <div className={styles.navbar_items}>
             {navLinks.map((link) => {
-              const isActive = pathname.startsWith(link.href);
+              let isActive = false;
+              if (link.href === "/") {
+                isActive = pathname === link.href;
+              } else {
+                isActive = pathname.startsWith(link.href);
+              }
 
               return (
                 <Link

@@ -32,7 +32,6 @@ const About: NextComponentType = () => {
         i&#39;m&nbsp;
         <span className={styles.name}>nishant balaji</span>
       </motion.h1>
-
       <motion.div className={styles.typing}>
         <ReactTypingEffect
           text={titles}
@@ -41,6 +40,14 @@ const About: NextComponentType = () => {
           className="text-2xl"
         />
       </motion.div>
+      {/* <div className={styles.description}>
+        i'm currently a third year student at uc san diego studying computer
+        engineering. i'm passionate about technology and i love learning more
+        and exploring the field! right now, i'm interning at roblox. i've
+        previously interned at nvidia and nasa goddard space flight center.at
+        ucsd, i'm currently the president of the association for computing
+        machinery. feel free to connect with me at any of the links below!
+      </div> */}
     </motion.div>
   );
 };

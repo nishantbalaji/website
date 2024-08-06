@@ -8,7 +8,9 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 255, 255, 255;
   --background-end-rgb: 255, 255, 255;
-  --accent-color: #04b1c8;
+  --ice-blue: #04b1c8;
+  --royal-purple: #8e63c6;
+  --accent-color: var(--ice-blue);
 
   // --primary-glow: conic-gradient(
   //   from 180deg at 50% 50%,
@@ -41,39 +43,40 @@
   --card-border-rgb: 131, 134, 135;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: #ffffff;
-    --background-start-rgb: #777;
-    --background-end-rgb: #777;
-    --accent-color: #8e63c6;
+// dark mode
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     --foreground-rgb: #ffffff;
+//     --background-start-rgb: #777;
+//     --background-end-rgb: #777;
+//     --accent-color: var(--royal-purple);
 
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-    --secondary-glow: linear-gradient(
-      to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0.3)
-    );
+//     --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
+//     --secondary-glow: linear-gradient(
+//       to bottom right,
+//       rgba(1, 65, 255, 0),
+//       rgba(1, 65, 255, 0),
+//       rgba(1, 65, 255, 0.3)
+//     );
 
-    --tile-start-rgb: 2, 13, 46;
-    --tile-end-rgb: 2, 5, 19;
-    --tile-border: conic-gradient(
-      #ffffff80,
-      #ffffff40,
-      #ffffff30,
-      #ffffff20,
-      #ffffff10,
-      #ffffff10,
-      #ffffff80
-    );
+//     --tile-start-rgb: 2, 13, 46;
+//     --tile-end-rgb: 2, 5, 19;
+//     --tile-border: conic-gradient(
+//       #ffffff80,
+//       #ffffff40,
+//       #ffffff30,
+//       #ffffff20,
+//       #ffffff10,
+//       #ffffff10,
+//       #ffffff80
+//     );
 
-    --callout-rgb: 20, 20, 20;
-    --callout-border-rgb: 108, 108, 108;
-    --card-rgb: 100, 100, 100;
-    --card-border-rgb: 200, 200, 200;
-  }
-}
+//     --callout-rgb: 20, 20, 20;
+//     --callout-border-rgb: 108, 108, 108;
+//     --card-rgb: 100, 100, 100;
+//     --card-border-rgb: 200, 200, 200;
+//   }
+// }
 
 * {
   box-sizing: border-box;

@@ -8,16 +8,16 @@ const About: NextPage = () => {
       <h1 className={styles.heading}>who am i? </h1>
       <div className={styles.description}>
         <p>
-          i'm currently a masters student at <span>uc san diego</span> studying
-          computer engineering.
+          i&apos;m currently a masters student at <span>uc san diego</span>{" "}
+          studying computer engineering.
         </p>
         <br />
         <p>
           {/* i've previously interned at <span>roblox</span>, <span>nvidia</span>{" "}
           and <span>nasa goddard space flight center</span>. */}
-          i'm super interested in learning more about tech and computing, as
-          well as cs education to underrepresented communities! at ucsd, i was
-          the previous president of the{" "}
+          i&apos;m super interested in learning more about tech and computing,
+          as well as cs education to underrepresented communities! at ucsd, i
+          was the previous president of the{" "}
           <a href="https://acmucsd.com" className={styles.acm}>
             association for computing machinery
           </a>

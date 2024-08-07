@@ -15,25 +15,23 @@ const ImageComponent: React.FC<ImageComponentProps> = ({ path }) => {
       setImageData(data);
     });
   }, []);
-  const make = imageData?.Make;
-  const model = imageData?.Model;
-  const ISO = imageData?.ISO;
-  const exposureTime = "1/" + String(1 / imageData?.ExposureTime);
-  const aperture = imageData?.FNumber;
-  const focalLength = imageData?.FocalLength;
+  // const make = imageData?.Make;
+  // const model = imageData?.Model;
+  // const ISO = imageData?.ISO;
+  // const exposureTime = "1/" + String(1 / imageData?.ExposureTime);
+  // const aperture = imageData?.FNumber;
+  // const focalLength = imageData?.FocalLength;
 
   return (
     <div>
       <Image src={path} alt="image" width={200} height={200} />
       {/* <p>{JSON.stringify(imageData)}</p> */}
-      <p>
-        {make} {model}
-      </p>
+      <p>{/* {make} {model} */}</p>
       {/* <p>{model}</p> */}
-      <p>ISO{ISO}</p>
+      {/* <p>ISO{ISO}</p>
       <p>Shutter Speed {exposureTime}</p>
       <p>ƒ/{aperture}</p>
-      <p>{focalLength}mm</p>
+      <p>{focalLength}mm</p> */}
     </div>
   );
 };

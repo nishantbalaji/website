@@ -10,4 +10,15 @@
   font-size: 14px;
   align-items: center;
   justify-content: center;
+  padding-left: 5rem;
+}
+
+.footer_links,
+.right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  flex: 1;
 }

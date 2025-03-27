@@ -28,7 +28,7 @@
     "next-env.d.src/components/*s",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/components/Cursor/index.jsx"
+    "src/components/Cursor/index.tsx"
   ],
   "exclude": ["node_modules"]
 }

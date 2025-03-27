@@ -8,14 +8,15 @@ import { NextComponentType } from "next";
 import ReactTypingEffect from "react-typing-effect";
 
 const titles = [
-  "developer",
-  "engineer",
-  "programmer",
-  "coder",
-  "full stack engineer",
-  "student",
-  "computer engineer",
-  "photographer",
+  "nishant balaji.",
+  "a developer.",
+  "an engineer.",
+  "a programmer.",
+  "a coder.",
+  "a full stack engineer.",
+  "a student.",
+  "a computer engineer.",
+  "a photographer.",
 ];
 
 const Home: NextPage = () => {
@@ -26,17 +27,18 @@ const Home: NextPage = () => {
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>"
       />
       <div className={styles.about}>
+        <h2 className={styles.heading_two}>hello, world! 👋</h2>
         <h1 className={styles.heading_one}>
-          hello, world! 👋 i&#39;m&nbsp;
-          <span className={styles.name}>nishant balaji</span>
+          i&#39;m&nbsp;
+          {/* <span className={styles.name}>nishant balaji</span> */}
+          {/* <br /> */}
+          <ReactTypingEffect
+            text={titles}
+            speed={250}
+            eraseDelay={2000}
+            className={styles.typing}
+          />
         </h1>
-
-        <ReactTypingEffect
-          text={titles}
-          speed={100}
-          eraseDelay={1000}
-          className={styles.typing}
-        />
       </div>
       {/* <ImageComponent path={"/birds.JPG"} /> */}
     </main>

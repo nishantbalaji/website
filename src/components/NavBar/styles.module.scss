@@ -1,0 +1,103 @@
+.navbar {
+  padding: 1.2rem 5rem 1.2rem 5rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.navbar_left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar_right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar_logo {
+  justify-self: left;
+  font-family: var(--font-mono);
+  font-size: 1rem;
+}
+
+.navbar_items {
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+}
+
+.navbar_item {
+  padding: 10px;
+  display: block;
+}
+
+.navbar_item:hover {
+  color: white;
+  background-color: var(--accent-color);
+  cursor: none;
+  animation: navhover 400ms ease-in-out forwards;
+  border-radius: 5px;
+  size: 110%;
+}
+
+.active {
+  padding: 10px;
+  display: block;
+  color: var(--accent-color);
+  font-weight: bold;
+  animation: navclick 400ms ease-in-out forwards;
+}
+
+@keyframes navclick {
+  0% {
+    color: var(--foreground-rgb);
+  }
+  100% {
+    color: var(--accent-color);
+  }
+}
+
+@keyframes navhover {
+  0% {
+    color: var(--foreground-rgb);
+    background-color: transparent;
+  }
+  100% {
+    color: white;
+    background-color: var(--accent-color);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .navbar {
+    padding: 1.2rem 20rem 1.2rem 20rem;
+  }
+}
+
+@media screen and (max-width: 784px) {
+  .navbar {
+    padding: 20px 20px 20px 20px;
+  }
+
+  .navbar_items {
+    display: none;
+  }
+}

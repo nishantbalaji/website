@@ -1,0 +1,24 @@
+.footer {
+  padding: 20px;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  font-family: var(--font-mono);
+  color: #797979;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5rem;
+}
+
+.footer_links,
+.right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  flex: 1;
+}

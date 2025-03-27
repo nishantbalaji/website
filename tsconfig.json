@@ -9,12 +9,26 @@
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "baseUrl": "."
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/NavBar", "components/useDarkMode.js"],
+  "include": [
+    "next-env.d.src/components/*s",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/components/Cursor/index.tsx"
+  ],
   "exclude": ["node_modules"]
 }

@@ -8,7 +8,8 @@ const About: NextPage = () => {
       <h1 className={styles.heading}>who am i? </h1>
       <div className={styles.description}>
         <p>
-          i&apos;m currently a masters student at <span>uc san diego</span>{" "}
+          i&apos;m currently a software engineer at <span>waymo</span>.
+          previously, I was a masters student at <span>uc san diego</span>{" "}
           studying computer engineering.
         </p>
         <br />

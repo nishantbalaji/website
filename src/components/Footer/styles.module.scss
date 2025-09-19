@@ -22,3 +22,15 @@
   gap: 1rem;
   flex: 1;
 }
+
+.footer_note {
+  display: flex;
+}
+
+@media screen and (max-width: 784px) {
+  .footer {
+    flex-direction: column;
+    padding: 0;
+    padding-bottom: 0.5rem;
+  }
+}

@@ -32,12 +32,15 @@ const Home: NextPage = () => {
           i&#39;m&nbsp;
           {/* <span className={styles.name}>nishant balaji</span> */}
           {/* <br /> */}
-          <ReactTypingEffect
-            text={titles}
-            speed={250}
-            eraseDelay={2000}
-            className={styles.typing}
-          />
+          {/* <span className={styles.typing_effect}>
+            <ReactTypingEffect
+              text={titles}
+              speed={250}
+              eraseDelay={2000}
+              className={styles.typing}
+            />
+          </span> */}
+          <span className={styles.name}>nishant balaji</span>
         </h1>
       </div>
       {/* <ImageComponent path={"/birds.JPG"} /> */}

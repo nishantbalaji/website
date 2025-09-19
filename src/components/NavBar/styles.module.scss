@@ -37,7 +37,8 @@
   font-size: 1rem;
 }
 
-.navbar_items {
+.navbar_items,
+.navbar_name {
   font-size: 1.3rem;
   display: flex;
   flex-direction: row;
@@ -99,5 +100,9 @@
 
   .navbar_items {
     display: none;
+  }
+
+  .navbar_name {
+    padding-left: 4rem;
   }
 }

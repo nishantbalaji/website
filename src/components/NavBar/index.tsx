@@ -35,7 +35,7 @@ const NavBar: NextComponentType = () => {
       <div className={styles.navbar_container}>
         <div className={styles.navbar_left}>
           <Link href="/">
-            <div className={styles.navbar_items}>nishant balaji</div>
+            <div className={styles.navbar_name}>nishant balaji</div>
 
             {/* <div className={styles.logo}>
               <Image src="/name.svg" width="112" height="20" alt="logo" />

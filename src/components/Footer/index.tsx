@@ -10,7 +10,7 @@ const Footer: NextComponentType = () => {
         <Link href="https://github.com/nishantbalaji">github</Link>
         <Link href="https://linkedin.com/in/nishantbalaji">linkedin</Link>
       </div>
-      <span>made with 🍵 by nishant balaji</span>
+      <span className={styles.footer_note}>made with 🍵 by nishant balaji</span>
       <div className={styles.right}></div>
     </div>
   );
